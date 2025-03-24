@@ -13,41 +13,33 @@ you = youdict[youstr]
 print(f"you choose {reversedict[you]}\nComputer choose {reversedict[computer]}")
 
 if(computer == you):
-    # print("Its a draw!!")
     engine.say("Its a draw!!")
     engine.runAndWait()
 
 else:
-    if(computer == -1 and you == 1): # 2
-        # print("You Win , Snake drink water!")
+    if(computer == -1 and you == 1): 
         engine.say("You win snake drink water!!")
         engine.runAndWait()
-    elif(computer == -1 and you == 0): # -1
-        # print("You loose , you drown the gun in water!")
+    elif(computer == -1 and you == 0): 
         engine.say("you loose you drown the gun in water!!")
         engine.runAndWait()
 
-    elif(computer == 1 and you == -1): # -2
-        # print("you win ,You give water to snake!") 
+    elif(computer == 1 and you == -1): 
         engine.say("you win you gave water to snake!!")
         engine.runAndWait()
 
-    elif(computer == 1 and you == 0): # -1
-        # print("You Kill the snake!")
+    elif(computer == 1 and you == 0): 
         engine.say("you kill the snake")
         engine.runAndWait()
 
     elif(computer == 0 and you == -1):
-        # print("You drown the gun")
         engine.say("you loose you drown the gun")
         engine.runAndWait()
 
     elif(computer == 0 and you == 1):
-        # print("ohh sit!! you loose!!")
         engine.say("ohh sit!! you loose!!")
         engine.runAndWait()
 
     else:
-        # print("Something Went Wrong!!")
         engine.say("Something went wrong please enter valid key")
         engine.runAndWait()
